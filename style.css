@@ -10,7 +10,7 @@ body{
     flex-direction: column;
 }
 
-.body div{}
+
 
 .header{
     background-color: #1F2937;
@@ -20,21 +20,26 @@ body{
     flex:0 0 0;
     justify-content: flex-end;
     align-items: center;
+    gap: 15px;
  
 }
-
+.header li{
+    color: #E5E7EB;
+}
 .header ul{
     display: flex;
     padding-right: 144px;
+    gap: 15px;
 }
 
-.header a{
+.logo{
     flex:1;
     align-items: flex-start;
     justify-content:  flex-start;
     padding-left: 145px;
-
-
+    font-family: 'Courier New', Courier, monospace;
+    color: F9FAF8;
+    
     font-size: 24px;
 }
 .header div{
@@ -46,7 +51,7 @@ body{
 
 .hero{
     display: flex;
-    flex: 1 1 1;
+    flex: 1 1 0;
     
     background-color: #1F2937;
     text-align: center;
@@ -54,17 +59,17 @@ body{
     flex-wrap:wrap;
 
     padding-left: 150px;
-    gap: 200px;
+    justify-content: space-between;
     
 }
 
 .hero-body{
     display: flex;
-    flex:0 1 0;
+    flex:0 1 1;
     flex-direction: column;
     font-size: 18px;
     color: #E5E7EB;
-    text-align: center;
+    text-align: left;
     text-wrap: wrap;
     justify-content: center;
 
@@ -74,12 +79,13 @@ body{
 }
 
 .hero-desc button{
-    flex: 0 1 0;
+    flex: 0 1 1;
     width: 80px;
-    height: 25px;
+    height: 35px;
     border-radius: 5px;
     background-color: #3882F6;
     color: white;
+    
     
     
     
@@ -88,12 +94,13 @@ body{
 .hero-desc{
     display: flex;
     flex-direction: column;
-    flex: 1 1 0;
+    flex: 1 1 1;
     width: 300px;
-    height: 100px;
-    
-    margin: auto;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+    font-size: 19px;
     text-align: left;
+    
 }
 
 .hero-text{
@@ -240,11 +247,51 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
 }
+.action-container{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+
+}
+.action-container div{
+    font-weight: bold;
+}
+
+.popup p{
+    font-weight: 400;
+    margin: 0;
+}
+.popup{
+    display: flex;
+    flex-direction: row;
+    background-color: #3882F6;
+    border-radius: 5px;
+    padding: 25px;
+    flex:1 1 1;
+    width: 800px;
+    color: white;
+}
+
+.popup button{
+    height: 25px;
+    width: 85px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #3882F6;
+    color: white;
+    border: solid 1px white
+
+}
+
+
 .footer{
   background-color: #1F2937;
-  max-height: 25px;
-  min-height: 25px;
-  justify-content: flex-end;
+  max-height: 40px;
+  min-height: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
   
-  flex: 1 0 1;
+  flex: 1 1 1;
 }
