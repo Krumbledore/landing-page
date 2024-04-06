@@ -10,7 +10,7 @@ body{
     flex-direction: column;
 }
 
-body div{}
+.body div{}
 
 .header{
     background-color: #1F2937;
@@ -46,8 +46,8 @@ body div{}
 
 .hero{
     display: flex;
-    flex: 1 1 0;
-    height: 300px;
+    flex: 1 1 1;
+    
     background-color: #1F2937;
     text-align: center;
     padding:50px;
@@ -110,10 +110,15 @@ body div{}
 .place-holder{
     display: flex;
     flex-direction: row;
-    flex: 0 1 0;
+    flex: 1 1 1;
     margin: 0;
     text-align: center;
+    justify-content: center;
+    align-content: center;
     flex-wrap:wrap;
+    width: 500px;
+    min-height: 250px;
+    background-color: grey;
 }
 
 .place-holder p{
